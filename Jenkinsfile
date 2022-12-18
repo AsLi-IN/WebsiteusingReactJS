@@ -21,6 +21,7 @@ pipeline{
        npm start 
       }
   }
+  }
     post{
       success{
     echo "THIS IS A POST STEP YOUR DEPLOYMENT IS COMPLETED"
