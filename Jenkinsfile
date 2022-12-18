@@ -6,7 +6,7 @@ pipeline{
   stage('Pull')
     {
       steps{
-       git 'https://github.com/ajinkyagitrepo/WebsiteusingReactJS.git'
+       git branch: 'main', url: 'https://github.com/ajinkyagitrepo/WebsiteusingReactJS.git'
       }
     }
     stage('Build')
