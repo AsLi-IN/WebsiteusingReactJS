@@ -1,14 +1,17 @@
 pipeline {
-  agent any
-  stages {
-    stage('Build') {
-      steps {
-        sh 'sh ls'
-      }
+  agent {
+    node {
+      label 'Node'
     }
 
   }
-  environment {
-    Dev = '1'
+  stages {
+    stage('Build') {
+      steps {
+        sh 'ls'
+        bat 'dir'
+      }
+    }
+
   }
 }
