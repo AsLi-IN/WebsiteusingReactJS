@@ -24,7 +24,7 @@ pipeline{
   }
     post{
       success{
-    echo "THIS IS A POST STEP YOUR DEPLOYMENT IS COMPLETED"
+    echo 'THIS IS A POST STEP YOUR DEPLOYMENT IS COMPLETED'
       }
     }
 }
